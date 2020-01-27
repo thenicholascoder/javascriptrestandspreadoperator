@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+//backend
+let user = {
+	fname : 'Joe',
+	lname: 'Santos',
+	age: 30,
+	phone: '718-294-8978'
+};
+
+let car = {
+	title: 'benz',
+	price: 100000,
+	country: 'germany'
+};
+//destructuring objects
+let { first, second, ...others} = user;
+
+// console.log(`${first} ${second}`);
+// console.log(others);
+const newObject = {
+	...user,
+	...car 
+}
+
+console.log(newObject);
+
+</script>
+</body>
+</html>
